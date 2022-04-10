@@ -4,7 +4,20 @@ pragma solidity >=0.4.22 <0.9.0;
 contract TodoList {
   uint public taskCount = 0;
 
-//   function setCompleted(uint completed) public restricted {
-//     last_completed_migration = completed;
-//   }
+  struct Task {
+    uint id;
+    string description;
+    bool is_completed;
+  }
+
+  mapping(uint => Task) public tasks;
+
+  constructor() public {
+    createTask("Hey, Task one is take a pledge that you would complete all of your tasks today!");
+  }
+
+  function createTask(string memory _description) public {
+    taskCount++;
+    tasks[taskCount] = Task(taskCount, _description, false);
+  }
 }
