@@ -91,3 +91,16 @@ Now you should be able to access the todolist UI with browser on your host OS wi
 Now you need to configure metamask extension to be able to access your blockchain through your browser.
 
 
+
+
+
+
+## 🤝 Contributing
+
+```bash
+1. Fork the repository 
+2. Do the desired changes (add/delete/modify)
+3. Make a pull request
+```
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
